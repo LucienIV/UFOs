@@ -15,12 +15,13 @@ Entering information into any of these boxes and then clicking anywhere else on 
 
 ![image](https://user-images.githubusercontent.com/92831138/152600158-86939dc6-dc5e-482b-a023-5c6f22d5a6ae.png)
 
-
+The filters can be changed at any time to return different results without a need to refresh the webpage, with one exception that will be noted in the summary section.
 
 ## Summary
 ### Drawback to Design
-date search delete
+One drawback to the construction of the webpage is that deleting the date from the filters will not reset that value for the returned filters. Further testing is needed to determine the exact cause of this, but it is definitely worth metioning. No other filters behave this way on the webpage. Deleting any other filter such as state or city will return a new set of results matching the remaining filters. However, deleting the date entry will not have the same effect. It is worth noting that deleting the entry for the date filter and then a second filter will still return results for the reamining filter criteria. 
 
 ### Recommendation
-provide dropdown interactivity
-format duration to allow filtering as inconsistency prevents
+One recommendation for the webpage in the future would be to add a dropdown functionality via bootstrap to the filter entry fields to allow the user to know what fields are available for each filter. This would prevent any instances of a user putting in a value for a filter that is not currently present on any of the rows in the listing.
+
+Another recommendation would be to standardize the entry of the values in the duration column of the listing. As it is currently it would be incredibly difficult to filter due to the combinations of strings and integers, especially with the varied structure of the strings. An easier solution than attempting to filter the existing data would be to simply create a standardized format for the data entry, modify existing fields, and then ensure new entries are in the correct format. A filter could then be added into the script for the page allowing for users to filter the data by duration as well. 
