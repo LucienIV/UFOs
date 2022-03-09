@@ -18,8 +18,6 @@ Entering information into any of these boxes and then clicking anywhere else on 
 The filters can be changed at any time to return different results without a need to refresh the webpage, with one exception that will be noted in the summary section.
 
 ## Summary
-### Drawback to Design
-One drawback to the construction of the webpage is that deleting the date from the filters will not reset that value for the returned filters. Further testing is needed to determine the exact cause of this, but it is definitely worth mentioning at this stage. No other filters behave this way on the webpage. Deleting any other filter such as state or city will return a new set of results matching the remaining filters. However, deleting the date entry will not have the same effect. It is worth noting that deleting the entry for the date filter and then a second filter will still return results for the remaining filter criteria. 
 
 ### Recommendation
 One recommendation for the webpage in the future would be to add a dropdown functionality via bootstrap to the filter entry fields to allow the user to know what fields are available for each filter. This would prevent any instances of a user putting in a value for a filter that is not currently present on any of the rows in the listing.
